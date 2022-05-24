@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Window Size</title>
+  <style>
+    .tag {
+      display: inline-block;
+      background-color: thistle;
+      padding:  16px;
+      margin-top: 16px;
+      font-size: 30px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Window Size</h1>
+</header>
+<div class="tag"></div>
+
+<script>
+  const tag = document.querySelector('.tag')
+  function updateTag() {
+    tag.innerHTML = `
+    window.screen: ${window.screen.width}, ${window.screen.height} <br/>
+    window.outer: ${window.outerWidth}, ${window.outerHeight} <br/>
+    window.inner: ${window.innerWidth}, ${window.innerHeight} <br/>
+    documentElement.client: ${window.innerWidth}, ${window.innerHeight} <br/>
+    `
+  }
+
+  window.addEventListener('resize', () => {
+    updateTag()
+  })
+  updateTag()
+</script>
+
+</body>
+</html>
