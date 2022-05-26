@@ -1,0 +1,45 @@
+body {
+  margin: 0
+}
+
+.target_ground {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+
+.target_wrapper{
+  position: absolute;
+}
+
+.target {
+  position: absolute;
+  top: -60px;
+  left: -60px;
+}
+
+.line > div {
+  position: absolute;
+  border-left: 1px solid red;
+  border-top: 1px solid red;
+}
+
+.vertical_line_top {
+  bottom: 35px;
+  height: 100vh;
+}
+
+.vertical_line_bottom {
+  top: 35px;
+  height: 100vh;
+}
+
+.horizontal_line_left {
+  right: 35px;
+  width: 100vw;
+}
+
+.horizontal_line_right {
+  left: 35px;
+  width: 100vw;
+}
