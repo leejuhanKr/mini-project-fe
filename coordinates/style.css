@@ -1,5 +1,6 @@
 body {
-  margin: 0
+  margin: 0;
+  overflow: hidden
 }
 
 .target_ground {
@@ -10,36 +11,50 @@ body {
 
 .target_wrapper{
   position: absolute;
+  left: 50%;
+  top: 50%;
 }
 
 .target {
   position: absolute;
-  top: -60px;
-  left: -60px;
+  transform: translate(-50%,-50%);
 }
 
 .line > div {
   position: absolute;
-  border-left: 1px solid red;
-  border-top: 1px solid red;
+  background-color: red;
 }
 
-.vertical_line_top {
+.vertical_line {
+  height: 100vh;
+  width: 1px;
+}
+
+.horizontal_line {
+  width: 100vw;
+  height: 1px;
+}
+
+.line>.top {
   bottom: 35px;
-  height: 100vh;
 }
 
-.vertical_line_bottom {
+.line>.bottom {
   top: 35px;
-  height: 100vh;
 }
 
-.horizontal_line_left {
+.line>.left {
   right: 35px;
-  width: 100vw;
 }
 
-.horizontal_line_right {
+.line>.right {
   left: 35px;
-  width: 100vw;
+}
+
+.tag {
+  position: absolute;
+  color: aliceblue;
+  transform: translate(20px,20px);
+  width: max-content;
+  font-size: 1.2em;
 }
