@@ -1,0 +1,10 @@
+body {
+    margin: auto 0;
+}
+
+.img-wrapper {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
