@@ -14,7 +14,6 @@ findBtn.addEventListener('click', () => {
   // 개선된 방법
   rabbit.scrollIntoView({
     behavior: "smooth",
-    // block: "center",
-    block: "nearest",
+    block: "center",
   })
 })
