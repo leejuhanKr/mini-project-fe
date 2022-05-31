@@ -1,17 +1,31 @@
 body {
-    margin: auto 0;
-    background-color: beige;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  margin: auto 0;
+  background-color: beige;
+  text-align: center;
+}
+
+.Btn-wrapper {
+  position: sticky;
+  top: 0;
+  background-color: rgba(0, 128, 0, 0.16);
+  padding: 10px
 }
 
 .find-Btn {
-    background-color: rgba(0,128,0,0.5);
-    font-size: 20px;
-    color: darkslategrey;
-    border-radius: 5px;
-    border: 0;
-    padding: 5px 10px;
-    margin: 1em;
+  background-color: rgba(0,128,0,1);
+  font-size: 20px;
+  color: rgb(200, 233, 233);
+  border-radius: 5px;
+  border: 0;
+  padding: 5px 10px;
 }
+
+.find-Btn:hover {
+  color: rgb(215, 160, 161);
+  transition-duration: 0.3s;
+}
+
+.find-Btn:active {
+  background-color: rgb(255, 125, 5);
+}
+
