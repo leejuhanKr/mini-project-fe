@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 0 auto;
   overflow: hidden
 }
 
@@ -9,10 +9,16 @@ body {
   background-color: black;
 }
 
+.target_ground:not(:hover) .target_wrapper {
+  opacity: 0.5;
+  border-color: blueviolet;
+}
+
 .target_wrapper{
+  display: block;
+  transition-duration: 0.1s;
   position: absolute;
-  left: 50%;
-  top: 50%;
+  transform: translate(50vw,50vh);
 }
 
 .target {
