@@ -5,34 +5,26 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>To-do List</title>
-  <script src="main.js"></script>
   <link rel="stylesheet" href="style.css">
+  <script src="./dummy-todo.js" type="text/javascript"></script>
+  <script src="main.js" defer></script>
   <script src="https://kit.fontawesome.com/dedca3e568.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div>shopping list</div>
+  <h1>shopping list</h1>
   <ul class="todos">
-    <li class="todo1">
-      <span>to_do_something1</span>
-      <i class="fa-regular fa-trash-can"></i>
+    <li class="todo">
+      <span class="todo-text">to_do_something1</span>
+      <i class="delete-btn fa-regular fa-trash-can"></i>
     </li>
-    <li class="todo1">
-      <span>to_do_something1</span>
-      <i class="fa-regular fa-trash-can"></i>
+    <li class="todo">
+      <span class="todo-text">to_do_something2</span>
+      <i class="delete-btn fa-regular fa-trash-can"></i>
     </li>
   </ul>
   <input class="todo-inp" type="text">
   <button class="add-btn">
     <i class="fa-solid fa-plus"></i>
-    
   </button>
-
-  <i class="fa-regular fa-trash-can-plus"></i>
-  <div>
-    <i class="fa-regular fa-trash-can-xmark"></i>
-    <i class="fa-regular fa-trash-xmark"></i>
-    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-    <i class="fa-solid fa-trash-can"></i>
-  </div>
 </body>
 </html>
