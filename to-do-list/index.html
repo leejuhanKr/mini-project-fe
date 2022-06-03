@@ -11,20 +11,30 @@
   <script src="https://kit.fontawesome.com/dedca3e568.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <h1>shopping list</h1>
-  <ul class="todos">
-    <li class="todo">
-      <span class="todo-text">to_do_something1</span>
-      <i class="delete-btn fa-regular fa-trash-can"></i>
-    </li>
-    <li class="todo">
-      <span class="todo-text">to_do_something2</span>
-      <i class="delete-btn fa-regular fa-trash-can"></i>
-    </li>
-  </ul>
-  <input class="todo-inp" type="text">
-  <button class="add-btn">
-    <i class="fa-solid fa-plus"></i>
-  </button>
+  <div class="container">
+    <nav class="control-bar">
+      <h1 class="todo-project-name">To-Do List</h1>
+    </nav>
+    <ul class="todos">
+      <li class="todo">
+        <!-- <i class="check-btn fa-regular fa-circle"></i>
+        <span class="todo-text">to_do_something1</span>
+        <i class="delete-btn fa-regular fa-trash-can"></i>
+      </li>
+      <li class="todo">
+        <i class="check-btn fa-regular fa-circle-check"></i>
+        <span class="todo-text">to_do_something2</span>
+        <i class="delete-btn fa-regular fa-trash-can"></i>
+      </li> -->
+    </ul>
+    <div class="input-form">
+      <input class="todo-inp" type="text">
+    </div>
+    <div class="add-btn-wrapper">
+      <button class="add-btn">
+        <i class="fa-solid fa-plus"></i>
+      </button>
+    </div>
+  </div>
 </body>
 </html>
