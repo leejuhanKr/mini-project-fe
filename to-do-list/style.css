@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    color: rgb(218,218,218)
+}
+
+body {
+    background-image: url(https://products.ls.graphics/mesh-gradients/images/01.-Royal-Heath.jpg);
+    width:100vw;
+    height: 100vh;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: rgb(20,20,20,0.9);
+    border-radius: 15px;
+    width: 300px;
+    aspect-ratio: 9 / 16;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.control-bar {
+    margin: 10px;
+}
+
+.input-form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.todos {
+    flex-grow: 1;
+    overflow: scroll;
+    display: unset;
+    padding: 10px;
+}
+
+.todos::-webkit-scrollbar {
+    display: none;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.todo-text {
+    flex-grow: 1;
+    margin-left: 10px
+}
+
+.fa-circle-check ~ .todo-text {
+    text-decoration:line-through;
+    font-style: italic;
+}
+
+.delete-btn {
+    margin-right: 5px;
+}
+
+.todo-inp {
+    margin: 4px;
+    padding: 5px 10px;
+    border: None;
+    border-radius: 5px;
+    background-color: rgba(128, 128, 128, 0.356);
+    font-size: 16px;
+}
+
+.todo-inp:focus {
+    outline: None;
+}
+
+.add-btn-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background: linear-gradient(317deg, rgba(2,0,36,1) 0%, rgba(9,121,96,1) 35%, rgba(2,34,40,1) 100%);
+    opacity: 0.8;
+}
+
+.control-bar {
+    margin: 0px;
+    padding: 6px 20px;
+    background: linear-gradient(317deg, rgba(2,0,36,1) 0%, rgba(9,121,96,1) 35%, rgba(2,34,40,1) 100%);
+    opacity: 0.8;
+}
+
+.add-btn {
+    width: 50px;
+    height: 50px;
+    align-self: center;
+    border-radius: 50%;
+    margin: 5px 0px 10px 0px;
+    font-size: 20px;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.7);
+}
+
+.fa-solid {
+    color: rgb(200,200,200);
+}
+
+.todo-project-name {
+    color: pink;
+}
