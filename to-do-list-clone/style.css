@@ -28,6 +28,10 @@ body {
   box-shadow: 9px 11px 5px 0px rgba(125,124,125,1);
 }
 
+.items::-webkit-scrollbar {
+  display: none;
+}
+
 .header {
   height: 48px;
   padding: 8px;
