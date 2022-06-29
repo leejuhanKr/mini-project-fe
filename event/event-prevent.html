@@ -30,12 +30,19 @@
       document.addEventListener('wheel', event => {
         console.log('scrolling');
         event.preventDefault();
+        // [Intervention] Unable to preventDefault inside passive event listener 
+        // due to target being treated as passive.
+        // 스크롤링 처럼 빠르게 동작해야 하는 일 같은 경우에는
+        // 핸들링을 기다려 주지 않고 이벤트를 처리하기 때문에
+        // 사용자 핸들링을 먼저 기다려 주지 않음
+        // => event.preventDefalut를 사용할 수 없다
+        // 이런 이벤트들을 passive 하게 등록이 됨
       });
       const checkbox = document.querySelector('input');
       checkbox.addEventListener('click', event => {
-        // long
         console.log('checked');
-        event.preventDefault();
+        // 사용자가 원하는 처리가 끝나고 check 표시 같은 기본 이벤트 동작 수행 시점
+        event.preventDefault(); // 이 메서드를 통해 기본 동작을 수행하지 않을 수 있다.
       });
     </script>
   </body>
